@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/app_icon" />
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="@dimen/default_etxt_height"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="@dimen/default_etxt_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="PW"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="* 비밀번호는 영어 소문자, 대문자, 특수문자를 조합하여 6글자 이상으로 해주세요."
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_feach"
+                    android:text="로그인"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/join"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_feach"
+                    android:text="가입하기"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/find_id"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_feach"
+                    android:text="아이디 찾기"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/find_pw"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/default_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_feach"
+                    android:text="비밀번호 찾기"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

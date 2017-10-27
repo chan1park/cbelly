@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e2b2b</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pressed">#B3CA6F</color>
+    <color name="nonpressed">#00000000</color>
+
+
+    <!--기본 컬러-->
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_alpha">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha">#4D000000</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_alpha_5p">#339E9E9E</color>
+    <color name="gray_alpha_30p">#4D9E9E9E</color>
+    <color name="gray_alpha_80p">#CC9E9E9E</color>
+    <color name="dark_gray">#4e4e4e</color>
+    <color name="dark_green">#007D00</color>
+    <color name="green">#669900</color>
+    <color name="light_blue">#7BD4FF</color>
+    <color name="reward_gold">#9c8856</color>
+
+    <color name="light_blue_100">#B3E5FC</color>
+    <color name="light_blue_300">#4FC3F7</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="light_blue_900">#01579B</color>
+
+    <color name="colorAccent_30p">#2DFF4081</color>
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_blue_dark_30p">#1D0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+
+    <color name="main_out_layout_bg">#646464</color>
+    <color name="navy_theme_color">#455399</color>
+    <color name="beacon_activity_bg">#0066cc</color>
+
+    <color name="feach">#ff753a</color>
+    <color name="main_bg">#0e3b4c</color>
+
+    <!--
+    Hex Opacity Values
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00
+    -->
+
+</resources>

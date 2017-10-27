@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">C-Belly</string>
+
+    <!-- 공통 메시지 -->
+    <string name="network_check_plz">인터넷 연결을 확안하여 주세요.(AUC1)</string>
+    <string name="progress_dlg_meg">정보 수신 중 입니다.(AUC2)</string>
+    <string name="on_success_msg">onRespons_Success : 통신 성공</string>
+    <string name="on_failure_msg">연결에 실패하였습니다.(AUC3)</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="setting">설정</string>
+    <string name="cancel_eng">Cancel</string>
+    <string name="confirm_eng">OK</string>
+    <string name="save">저장</string>
+    <string name="no_data">No Data</string>
+    <string name="next">다음</string>
+    <string name="prev">이전</string>
+    <string name="add">등록</string>
+    <string name="success">성공</string>
+    <string name="fail">실패</string>
+</resources>

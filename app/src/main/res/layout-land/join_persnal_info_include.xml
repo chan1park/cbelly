@@ -33,7 +33,6 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -69,7 +68,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -105,7 +104,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -141,7 +140,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -176,7 +175,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -210,7 +209,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -246,7 +245,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -257,6 +256,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:lines="1"
             android:hint="센터리스트(강남, 부산, 천안, 대전, 광주)"
             android:textColor="@color/black"
             android:textColorHint="@color/gray"

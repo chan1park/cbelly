@@ -9,9 +9,11 @@
 
     <include layout="@layout/toolbar" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/info"
@@ -27,8 +29,10 @@
             android:textSize="18dp" />
 
         <LinearLayout
+            android:id="@+id/info_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_below="@+id/info"
             android:orientation="horizontal"
             android:padding="30dp">
@@ -38,7 +42,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="40dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -68,9 +72,8 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="200dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -90,12 +93,13 @@
                                 android:background="@color/black"/>
 
                             <TextView
+                                android:id="@+id/weghit_kg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
                                 android:textSize="@dimen/default_extra_large_text_size"
                                 android:textStyle="bold"
-                                tools:text="75kg" />
+                                android:text="75kg" />
 
                         </LinearLayout>
 
@@ -106,12 +110,56 @@
                             android:gravity="center"
                             android:orientation="horizontal">
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/default_extra_large_text_size"
+                                android:textStyle="bold"
+                                android:text="현 재\n모 습" />
 
+                            <ImageView
+                                android:id="@+id/photo"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_marginLeft="30dp"
+                                android:background="@drawable/border_feach" />
 
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/info_layout"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/default_btn_height"
+                android:layout_marginRight="60dp"
+                android:text="취소"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/border_btn_gray"/>
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/default_btn_height"
+                android:text="가입하기"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/border_btn_navy"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

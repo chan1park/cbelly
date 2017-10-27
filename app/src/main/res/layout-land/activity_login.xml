@@ -113,7 +113,7 @@
                     android:layout_height="@dimen/default_btn_height"
                     android:layout_marginRight="25dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border_feach"
+                    android:background="@drawable/border_btn_navy"
                     android:text="로그인"
                     android:textColor="@color/white"
                     android:textSize="18sp"

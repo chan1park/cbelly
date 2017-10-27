@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
@@ -77,14 +77,14 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/id"
+            android:id="@+id/tall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -121,14 +121,14 @@
         <TextView
             android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:margin_right="5dp"
+            android:layout_marginRight="5dp"
             android:text=":"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/pw"
+            android:id="@+id/waist"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

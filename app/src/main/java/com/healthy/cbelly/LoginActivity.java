@@ -50,16 +50,21 @@ public class LoginActivity extends BaseActivity {
         initToolbar(toolbar);
 
         toolbarBtn.setVisibility(View.GONE);
+
+        // TODO 코드 작성
     }
 
     @OnClick({R.id.login, R.id.join, R.id.find_id, R.id.find_pw,
             R.id.toolbar_btn, R.id.toolbar_title})
     public void onClick(View view) {
+        Intent intent;
         switch (view.getId()) {
             case R.id.login:
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
                 break;
             case R.id.join:
-                Intent intent = new Intent(this, JoinActivity.class);
+                intent = new Intent(this, JoinActivity.class);
                 startActivity(intent);
                 break;
             case R.id.find_id:

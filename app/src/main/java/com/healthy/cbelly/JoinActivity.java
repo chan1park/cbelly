@@ -59,6 +59,8 @@ public class JoinActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         initToolbar(toolbar);
+
+        // TODO 레이아웃 작업 끝남 코드 작성
     }
 
     @OnClick({R.id.toolbar_btn, R.id.confirm, R.id.cancel})

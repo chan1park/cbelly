@@ -11,6 +11,8 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitvity_main);
         ButterKnife.bind(this);
+
+        // TODO 메인 레이아웃 작업중 버터나이프 인젝션
     }
 
     @Override

@@ -44,6 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:maxLength="3"
             android:inputType="numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="@color/gray"
@@ -88,6 +89,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:maxLength="3"
             android:inputType="numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="@color/gray"
@@ -140,6 +142,7 @@
         <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:maxLength="3"
             android:text="cm"
             android:textColor="@color/black"
             android:textSize="@dimen/default_large_text_size"

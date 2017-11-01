@@ -47,10 +47,10 @@ public class MaterialAlertDialogUtil {
      * @param onPositiveListner
      * @return
      */
-    public static MaterialDialog confirmAlert(Context context, int title, int msg, boolean cancel, int positiveTxt, final OnPositiveListner onPositiveListner) {
+    public static MaterialDialog confirmAlert(Context context, String title, String msg, boolean cancel, String positiveTxt, final OnPositiveListner onPositiveListner) {
         MaterialDialog.Builder builder = new MaterialDialog.Builder(context);
         builder.theme(Theme.LIGHT);
-        if(0 != title) {
+        if(!TextUtils.isEmpty(title)) {
             builder.title(title);
         }
         builder.content(msg);
@@ -85,6 +85,7 @@ public class MaterialAlertDialogUtil {
         builder.title(title);
 
         builder.inputType(InputType.TYPE_CLASS_TEXT);
+        builder.inputRange(6, 20);
 
         String inputHint;
         if(!TextUtils.isEmpty(hint)) inputHint = hint;

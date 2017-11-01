@@ -9,10 +9,11 @@
         android:launchMode="singleTask"
         android:roundIcon="@mipmap/app_icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".LoginActivity"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +22,12 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:configChanges="orientation|keyboardHidden" />
-        <activity android:name=".JoinActivity"></activity>
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".JoinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>

@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.healthy.cbelly.account.JoinInfo;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -42,8 +44,8 @@ public class JoinActivity extends BaseActivity {
     EditText tall;
     @Bind(R.id.waist)
     EditText waist;
-    @Bind(R.id.weghit_kg)
-    TextView weghitKg;
+    @Bind(R.id.target_weight)
+    TextView target_weight;
     @Bind(R.id.photo)
     ImageView photo;
 
@@ -52,6 +54,8 @@ public class JoinActivity extends BaseActivity {
     @Bind(R.id.confirm)
     Button confirm;
 
+    private JoinInfo joinInfo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +63,8 @@ public class JoinActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         initToolbar(toolbar);
+
+
     }
 
     @OnClick({R.id.toolbar_btn, R.id.confirm, R.id.cancel})

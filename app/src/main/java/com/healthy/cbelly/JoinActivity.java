@@ -2,14 +2,11 @@ package com.healthy.cbelly;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.healthy.cbelly.account.JoinInfo;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -23,7 +20,6 @@ public class JoinActivity extends BaseActivity {
     TextView toolbarTitle;
     @Bind(R.id.toolbar)
     Toolbar toolbar;
-
     @Bind(R.id.info)
     TextView info;
     @Bind(R.id.name)
@@ -40,17 +36,14 @@ public class JoinActivity extends BaseActivity {
     EditText city;
     @Bind(R.id.center)
     EditText center;
-
     @Bind(R.id.weight)
     EditText weight;
     @Bind(R.id.tall)
     EditText tall;
     @Bind(R.id.waist)
     EditText waist;
-
-
-    @Bind(R.id.target_weight)
-    EditText target_weghit;
+    @Bind(R.id.weghit_kg)
+    TextView weghitKg;
     @Bind(R.id.photo)
     ImageView photo;
 
@@ -59,7 +52,6 @@ public class JoinActivity extends BaseActivity {
     @Bind(R.id.confirm)
     Button confirm;
 
-    private JoinInfo joinInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,9 +59,6 @@ public class JoinActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         initToolbar(toolbar);
-
-        joinInfo = new JoinInfo();
-
     }
 
     @OnClick({R.id.toolbar_btn, R.id.confirm, R.id.cancel})
@@ -79,34 +68,10 @@ public class JoinActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.confirm:
-                joinInfo.name = getText(name);
-                joinInfo.id = getText(id);
-                joinInfo.pw = getText(pw);
-                joinInfo.birth = getText(birth);
-                joinInfo.address = getText(city);
-                joinInfo.center = getText(center);
-                joinInfo.weight = getText(weight);
-                joinInfo.tall = getText(tall);
-                joinInfo.waist = getText(waist);
-                joinInfo.target_weight = getText(target_weghit);
                 break;
             case R.id.cancel:
                 break;
         }
-    }
-
-    private String getText(EditText txt) {
-        return txt.getText().toString();
-    }
-
-    private boolean isEmpty(String str) {
-        return TextUtils.isEmpty(str);
-    }
-
-    private void regexInfo() {
-        if(isEmpty(joinInfo.name)) {
-
-        }else if()
     }
 
     @Override

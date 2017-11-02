@@ -1,12 +1,10 @@
 package com.healthy.cbelly.account;
 
 /**
- * Created by chan1park on 2017. 11. 1..
- * <p>
- * 회원가입 모델
+ * Created by chan1park on 2017. 10. 24..
  */
 
-public class JoinInfo {
+public class LoginAccount {
 
     public int colum;
     public String name;
@@ -23,7 +21,7 @@ public class JoinInfo {
 
     @Override
     public String toString() {
-        return "JoinInfo{" +
+        return "LoginAccount{" +
                 "colum=" + colum +
                 ", name='" + name + '\'' +
                 ", id='" + id + '\'' +
@@ -53,4 +51,5 @@ public class JoinInfo {
         target_weight = "";
         photo = "";
     }
+
 }

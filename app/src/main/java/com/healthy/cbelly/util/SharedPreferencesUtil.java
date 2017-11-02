@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.healthy.cbelly.account.JoinInfo;
+
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -17,7 +20,6 @@ public class SharedPreferencesUtil {
     private static final String TAG = SharedPreferencesUtil.class.getName();
 
     private static final String SET_MAC_ADDRESS_PREF = "SET_MAC_ADDRESS_PREF";
-
 
     /**
      * SharedPreferences 에 String 저장

@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:background="@drawable/border_feach"
+            android:background="@drawable/border_btn_accent"
             android:gravity="center"
             android:padding="15dp"
             android:text="복부지방관리는 지속적인 관리가 필요합니다\n계정을 기준으로 내게 딱 맞는 자세한 서비스를\n제공하오니 가입해주시기 바랍니다"
@@ -82,39 +82,41 @@
                                 android:layout_height="wrap_content"
                                 android:text="체    중"
                                 android:textColor="@color/black"
-                                android:textSize="@dimen/default_extra_large_text_size"
+                                android:textSize="@dimen/default_large_text_size"
                                 android:textStyle="bold" />
 
                             <View
                                 android:layout_width="90dp"
                                 android:layout_height="2dp"
-                                android:layout_marginBottom="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
                                 android:background="@color/black" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="45dp"
+                                android:gravity="center"
                                 android:orientation="horizontal">
 
                                 <EditText
                                     android:id="@+id/target_weight"
-                                    android:layout_width="70dp"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
                                     android:gravity="center"
                                     android:maxLength="3"
-                                    android:lines="1"
+                                    android:inputType="numberDecimal"
                                     android:text="75"
                                     android:textColor="@color/black"
-                                    android:textSize="@dimen/default_extra_large_text_size"
+                                    android:textSize="@dimen/default_large_text_size"
                                     android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
                                     android:text="Kg"
                                     android:textColor="@color/black"
-                                    android:textSize="@dimen/default_extra_large_text_size"
+                                    android:textSize="@dimen/default_large_text_size"
                                     android:textStyle="bold" />
 
                             </LinearLayout>
@@ -139,9 +141,10 @@
                             <ImageView
                                 android:id="@+id/photo"
                                 android:layout_width="100dp"
-                                android:layout_height="100dp"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
                                 android:layout_marginLeft="30dp"
-                                android:background="@drawable/border_feach" />
+                                android:background="@drawable/camera" />
 
                         </LinearLayout>
                     </LinearLayout>

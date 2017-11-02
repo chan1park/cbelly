@@ -85,7 +85,7 @@ public class MaterialAlertDialogUtil {
         builder.title(title);
 
         builder.inputType(InputType.TYPE_CLASS_TEXT);
-        builder.inputRange(6, 20);
+        builder.inputRange(6, 6);
 
         String inputHint;
         if(!TextUtils.isEmpty(hint)) inputHint = hint;

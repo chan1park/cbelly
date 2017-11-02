@@ -4,10 +4,13 @@ import android.content.Context;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import com.healthy.cbelly.account.JoinInfo;
 import com.healthy.cbelly.account.LoginAccount;
 import com.healthy.cbelly.database.DB;
 import com.healthy.cbelly.database.DBOpenHelper;
@@ -17,7 +20,7 @@ import com.healthy.cbelly.util.LogUtil;
  * Created by chan1park on 2017. 10. 24..
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseFragment extends Fragment {
 
     public Context mContext;
 
@@ -28,23 +31,20 @@ public class BaseActivity extends AppCompatActivity {
 
     public static LoginAccount loginAccount;
 
+    @Nullable
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mContext = this;
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
     public void initDB(Context context) {
         dbOpenHelper = new DBOpenHelper(context);
         dbOpenHelper.open();
-    }
-
-    public void initToolbar(Toolbar toolbar) {
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayUseLogoEnabled(false);
-        supportInvalidateOptionsMenu();
     }
 
     public void setLoginaAccount(LoginAccount vo) {
@@ -86,18 +86,24 @@ public class BaseActivity extends AppCompatActivity {
         cursor.close();
     }
 
+
     @Override
-    protected void onPause() {
-        super.onPause();
+    public void onAttach(Context context) {
+        super.onAttach(context);
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public void onDetach() {
+        super.onDetach();
     }
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
     }
 }
